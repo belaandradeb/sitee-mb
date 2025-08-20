@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-/* Definindo a fonte e o fundo geral do site */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f7f6;
@@ -16,12 +15,11 @@ body {
     padding: 20px;
 }
 
-/* Estilo para o cabeçalho */
 header {
-    background-color: #006d77;
+    background-color: #0694da;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px ;
 }
 
 header h1 {
@@ -29,11 +27,10 @@ header h1 {
     font-weight: bold;
 }
 
-/* Barra de navegação */
 nav {
     background-color: #003d52;
     text-align: center;
-    padding: 10px 0;
+    padding: 10x;
 }
 
 nav ul {
@@ -49,12 +46,9 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 5.2em;
 }
 
-nav ul li a:hover {
-    color: #ffcc00;
-}
 
 /* Estilo para as seções de conteúdo */
 section {
@@ -77,25 +71,6 @@ section p {
     margin-bottom: 10px;
 }
 
-/* Estilo para os cards de informações */
-.card {
-    background-color: #e9f1f4;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-    color: #006d77;
-    font-size: 1.4em;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 1em;
-}
-
 /* Rodapé */
 footer {
     background-color: #003d52;
@@ -110,31 +85,21 @@ footer p {
 }
 
 /* Estilo para links importantes */
-a {
-    color: #006d77;
+nav{
+    background-color: #120593;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.193);
+    }
+    
+    nav>a{
+    color: #eaeaf4;
+    padding: 10px;
+    border-radius: 5px;
     text-decoration: none;
-}
-
-a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+    font-weight: bold;
+    transition-duration: 0.5s;
     }
-
-    section {
-        padding: 15px;
+    nav>a:hover{
+    background-color:#2f18c1;
+    color: #8eb2c5;
     }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    .card {
-        margin: 10px 0;
-    }
-}

@@ -30,7 +30,7 @@ header h1 {
 nav {
     background-color: #003d52;
     text-align: center;
-    padding: 10x;
+    padding: 10px;
 }
 
 nav ul {
@@ -40,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 15px;
 }
 
 nav ul li a {
@@ -52,7 +52,7 @@ nav ul li a {
 
 /* Estilo para as seções de conteúdo */
 section {
-    margin: 20px 0;
+    margin: 20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -71,9 +71,8 @@ section p {
     margin-bottom: 10px;
 }
 
-/* Rodapé */
 footer {
-    background-color: #003d52;
+    background-color: #120593;
     color: #fff;
     text-align: center;
     padding: 15px 0;
@@ -84,7 +83,6 @@ footer p {
     font-size: 1em;
 }
 
-/* Estilo para links importantes */
 nav{
     background-color: #120593;
     padding: 10px;
@@ -93,13 +91,12 @@ nav{
     
     nav>a{
     color: #eaeaf4;
-    padding: 10px;
+    padding: 120px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition-duration: 0.5s;
     }
     nav>a:hover{
-    background-color:#2f18c1;
     color: #8eb2c5;
     }

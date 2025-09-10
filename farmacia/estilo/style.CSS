@@ -16,14 +16,17 @@ body {
 }
 
 header {
-    background-color: #EBE938;
+    background-color: #d16900;
     color: #fff;
     text-align: center;
     padding: 20px ;
-    background-image: url(logo__farmacia_farmacotecnica2.gif);
+    background-image: url(logo__farmacia_farmacotecnica2-removebg-preview.png);
     background-size: 90px;
     background-repeat: no-repeat;
     background-position: 1% 50%;
+}
+main{
+    background-color: white;
 }
 
 header h1 {
@@ -53,8 +56,6 @@ nav ul li a {
     font-size: 5.2em;
 }
 
-
-/* Estilo para as seções de conteúdo */
 section {
     margin: 20px;
     padding: 20px;
@@ -76,7 +77,7 @@ section p {
 }
 
 footer {
-    background-color: #EB8D38;
+    background-color: #006d77;
     color: #fff;
     text-align: center;
     padding: 15px 0;
@@ -88,19 +89,24 @@ footer p {
 }
 
 nav{
-    background-color: #EB8D38;
-    padding: 10px;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.193);
+    background-color: #006d77;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.193);
     }
     
     nav>a{
-    color: #eaeaf4;
+    color: #fff;
     padding: 120px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     }
     nav>a:hover{
     color: #F2E205;
+    }
+
+    main{
+        background-color: #fff;
+        height: 100vh;
     }

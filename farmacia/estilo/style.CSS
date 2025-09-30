@@ -101,6 +101,7 @@ nav{
     nav>a{
     color: #fff;
     padding: 120px;
+    margin-top: 15px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -109,6 +110,34 @@ nav{
     nav>a:hover{
     color: #F2E205;
     }
+    #testes{
+        margin-top: 10px;
+        color: #fff;
+    padding: 120px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    background-color: #0092b2;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.193);
+    text-align: center;
+    }
+
+    #testes a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    
+    #testes a:hover {
+        color: #F2E205;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
 
     main{
         background-color: #fff;

@@ -26,8 +26,8 @@ main{
 }
 
 header{
-    background-image: url(estilo/farmacia.jpg);
-    background-size: 90px;
+    /*background-image: url(estilo/farmacia.jpg);*/
+    background-size: 9px;
     background-repeat: no-repeat;
     background-position: 20px;
 }

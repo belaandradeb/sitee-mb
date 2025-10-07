@@ -45,4 +45,8 @@ header h1 {
     margin-left: 110px;
 }
 
+article > p{
+    margin-bottom: 10px;
+}
+
 

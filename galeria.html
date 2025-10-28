@@ -1,25 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @charset "UTF-8";
+
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #15f0a7;
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* ===== MAIN ===== */
+        main {
+            background-color: white;
+            min-width: 300px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        main > h1 {
+            color: white;
+            background-color: #0092b2;
+            margin: 10px auto 20px auto;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 1.8em;
+        }
+
+        article > p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* ===== GALERIA ===== */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+        /* ===== BOTÃO VOLTAR ===== */
+        main > p a {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: #0092b2;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        main > p a:hover {
+            background-color: #00748c;
+        }
+
+        /* ===== RESPONSIVIDADE ===== */
+        @media (max-width: 768px) {
+            main {
+                max-width: 95%;
+                padding: 15px;
+            }
+
+            .galeria img {
+                height: 180px;
+            }
+
+            main > h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            .galeria img {
+                height: 160px;
+            }
+
+            main > p a {
+                width: 100%;
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
     <main>
-        <h1> Galeria</h1>
+        <h1>Galeria</h1>
+
         <article>
-            <p>Ligado diretamente à saúde, o ramo farmacêutico necessita estar em constante aprimoramento e pesquisa de novas substâncias, sendo portanto, um dos principais investidores do ramo de laboratórios.</p>
-            
-            <picture src="farmacia/estilo/2025-10-14-083035317.jpg" alt="20px">
-            <picture src="farmacia/estilo/2025-10-14-083022522.jpg"sizes="20px">
-            <picture src="farmacia/estilo/14 de out. de 2025 às 08_33(2).jpg" alt="20px">
-            <picture src="farmacia/estilo/imagemred.png" alt="20px">
-            <picture src="farmacia/estilo/14 de out. de 2025 às 08_33.jpg" alt="20px">
+            <p>
+                Ligado diretamente à saúde, o ramo farmacêutico necessita estar em constante aprimoramento e pesquisa de novas substâncias,
+                sendo, portanto, um dos principais investidores do ramo de laboratórios.
+            </p>
+
+            <section class="galeria">
+                <img src="farmacia/estilo/2025-10-14-083035317.jpg" alt="Laboratório 1">
+                <img src="farmacia/estilo/2025-10-14-083022522.jpg" alt="Laboratório 2">
+                <img src="farmacia/estilo/14 de out. de 2025 às 08_33(2).jpg" alt="Equipamentos farmacêuticos">
+                <img src="farmacia/estilo/imagemred.png" alt="Imagem ilustrativa">
+                <img src="farmacia/estilo/14 de out. de 2025 às 08_33.jpg" alt="Estudantes no laboratório">
+            </section>
         </article>
-        <p><a href="index.html" target="_self">Voltar
-        </a></p>
-    </main>
-</body>
-</html>
